@@ -1,7 +1,13 @@
 <?php
 
-require '../classes/classUsuarios.php';
+require_once '../classes/classDb.php';
+require_once '../classes/classUsuarios.php';
+require_once '../classes/classMysql.php';
 
-$usuario = new usuarios('admin', '12345', 'admin@gmail.com','0','avatar');
-echo "<pre>";
+
+$db = new db();
+
+$usuario = new usuarios($_POST['user'], $_POST['pass'], $_POST['mail'], $_POST['phone'], $_FILES['avatar']);
+$guardar = new mysql;
+$guardar->save();
 var_dump($usuario);

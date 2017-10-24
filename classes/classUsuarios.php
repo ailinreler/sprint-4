@@ -1,7 +1,5 @@
 <?php
 
-
-
 class usuarios{
 
     private $usuario;
@@ -14,7 +12,7 @@ class usuarios{
     public function __construct ($usuario, $pass, $mail,$telefono,$avatar){
 
         $this->usuario = $usuario;
-        $this->pass = $pass;
+        $this->pass = password_hash($pass, PASSWORD_DEFAULT);
         $this->mail = $mail;
         $this->telefono = $telefono;
         $this->avatar = $avatar;
@@ -44,7 +42,7 @@ class usuarios{
     }
 
 
-    public function setPass($pass) // si le paso tambien passconf me va a dar un error seguro cuando lo use solo para login y no para register
+    public function setPass($pass)
     {
 
         $this->pass = password_hash($pass, PASSWORD_DEFAULT);

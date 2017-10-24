@@ -39,7 +39,8 @@
 
       <div class="loginbox">
         <img class="user" src="images/user-login.png" alt="" >
-        <form class="loginbox-form" action="controller/register.controller.php" method="post" enctype="multipart/form-data">
+        <!-- action anterior controller/register.controller.php  -->
+        <form class="loginbox-form" action="test/test.php" method="post" enctype="multipart/form-data">
           <div class="inputbox">
             <input class="username"type="text" name="user" value="<?php
 
