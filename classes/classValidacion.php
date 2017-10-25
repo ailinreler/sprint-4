@@ -1,5 +1,4 @@
 <?php
-
 class Validacion {
 
     public static function validar(){

@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 class Usuario {
+=======
+class usuarios{
+>>>>>>> f416a0724057a1b4c5618b9c92d30b0f2db57639
 
     private $usuario;
     private $pass;

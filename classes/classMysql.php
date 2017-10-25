@@ -1,5 +1,4 @@
 <?php
-
 require_once 'classDb.php';
 require_once 'classValidacion.php';
 
@@ -39,5 +38,6 @@ class Mysql extends db{
     }
 
   }
+
 
 }

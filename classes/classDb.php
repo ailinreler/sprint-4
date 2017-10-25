@@ -1,5 +1,4 @@
 <?php
-
 class DB{
 
 
@@ -14,6 +13,4 @@ class DB{
 
     }
   }
-
-
 }

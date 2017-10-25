@@ -1,5 +1,4 @@
 <?php
-
 require_once '../classes/classUsuarios.php';
 require_once '../classes/classMysql.php';
 require_once '../classes/classValidacion.php';
@@ -12,4 +11,5 @@ $errores = $db->save($usuario);
 if ($errores === false) {
     header('Location:index.php');
 }
+
 var_dump($usuario);
